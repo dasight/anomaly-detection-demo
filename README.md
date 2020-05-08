@@ -36,6 +36,10 @@ class autoencoder(nn.Module):
 
 A trained model comes with the project, and can be directly used if you only need to present a demo. If you wish to retrain the model, use `1_fraud-model-train.ipynb`.
 
+## Model Deploy
+
+If you manually deploy the model into [Cloudera Machine Learning](https://www.cloudera.com/products/machine-learning.html), please use the `2_fraud-model-deploy.py` file and specify the `predict` function.
+
 ## Model View
 
 If you wish to get a quick view of the trained model, use `3_fraud-model-view.ipynb`.
