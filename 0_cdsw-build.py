@@ -51,8 +51,8 @@ create_model_params = {
     "name": "Fraud Detection " + run_time_suffix,
     "description": "Fraud Detection",
     "visibility": "private",
-    "targetFilePath": "4_model_serve_explainer.py",
-    "targetFunctionName": "explain",
+    "targetFilePath": "2_fraud-model-deploy.py",
+    "targetFunctionName": "predict",
     "engineImageId": default_engine_image_id,
     "kernel": "python3",
     "examples": [
