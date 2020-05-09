@@ -8,7 +8,7 @@
 
 from utils.cmlapi import CMLApi
 from datetime import datetime
-import os
+import os, time
 
 run_time_suffix = datetime.now()
 run_time_suffix = run_time_suffix.strftime("%d%m%Y%H%M%S")
