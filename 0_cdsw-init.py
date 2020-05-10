@@ -1,9 +1,9 @@
-## Run this file to auto deploy the model, run a job and deploy the application.
+## Run this file to auto deploy the model.
 
-# Install the requirements
+### Install the requirements
 !bash cdsw-build.sh
 
-# Download the data file and save it in the specified directory
+### Download the data file and save it in the specified directory
 !unzip -o data/creditcardfraud.zip
 
 from utils.cmlapi import CMLApi
@@ -20,10 +20,10 @@ USERNAME = os.getenv("CDSW_PROJECT_URL").split(
 API_KEY = os.getenv("CDSW_API_KEY")
 PROJECT_NAME = os.getenv("CDSW_PROJECT")
 
-# Instantiate API Wrapper
+### Instantiate API Wrapper
 cml = CMLApi(HOST, USERNAME, API_KEY, PROJECT_NAME)
 
-# Get User Details
+### Get User Details
 user_details = cml.get_user({})
 user_obj = {"id": user_details["id"], "username": "vdibia",
             "name": user_details["name"],
