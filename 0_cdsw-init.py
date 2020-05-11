@@ -61,6 +61,7 @@ create_model_params = {
     "cpuMillicores": 1000,
     "memoryMb": 2048,
     "nvidiaGPUs": 0,
+    "authEnabled": False,
     "replicationPolicy": {"type": "fixed", "numReplicas": 1},
     "environment": {}}
 
